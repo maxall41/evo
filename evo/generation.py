@@ -35,7 +35,7 @@ class Generator:
         self.temperature = temperature
         self.untils = ['\n\n']
 
-    @torch.zero_grad()
+    @torch.no_grad()
     def generate(
         self,
         device: str,
